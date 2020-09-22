@@ -4,7 +4,9 @@ import './components.scss';
 
 function Work() {
   return (
-    <p>Work</p>
+    <div className='container'>
+        Work
+    </div>
   );
 }
 

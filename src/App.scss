@@ -1,17 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,531;1,100&display=swap');
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,631;1,400&family=Public+Sans:ital,wght@0,100;0,531;1,100&display=swap');
+
+:root {
+  --white: #fbf5f3;
+  --primary: #de3c4b;
+  --darkmagenta: #c42847;
+  --secondary: #000022;
+  --orange: #e28413;
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Public Sans', sans-serif;
+  --header-height: 51px;
+}
 
 body{
-  font-family: 'Public Sans', sans-serif;
+  font-family: var(--font-sans);
   font-weight: 100;
+  background-color: var(--white);
+}
+.light {
+  font-weight: 100;
+}
+.display {
+  font-family: var(--font-serif);
+  &.light {
+    font-weight: 400;
+  }
+}
+.italic {
+  font-style: italic;
+  font-variation-settings: 'ital' 1;
 }
 
 .nav {
   position: fixed;
   top: 0;
   right: 0;
-  background-color: black;
+  width: 100%;
+  border-bottom: 2px solid var(--primary);
+  background-color: var(--white);
   .nav-item a{
-    color: white;
-    padding: 10px 30px;
+    color: var(--darkmagenta);
+    font-weight: 531;
+    text-decoration: none;
+  }
+  .nav-link {
+    display: inline-block;
   }
 }
