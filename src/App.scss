@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,531;1,100&display=swap');
+
+body{
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 100;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: black;
+  .nav-item a{
+    color: white;
+    padding: 10px 30px;
+  }
+}
