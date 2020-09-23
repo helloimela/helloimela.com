@@ -4,48 +4,47 @@
 
 .display-container {
   margin-top: 8rem;
+  color: lighten(#000022, 5%);
+  p {
+    margin-top: 2em;
+    letter-spacing: 1px;
+  }
 }
 
 .display {
   font-size: 5rem;
-  color: var(--secondary);
+  opacity: 0.8;
 }
 
-.rain {
-  background: red;
-  background: linear-gradient(to bottom, rgba(221,64,75,0) 0%, #dd404b 100%);
-  height: 50px;
-  position: absolute;
-  width: 5px;
-}
+.experience-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: var(--secondary);
+  color: var(--white);
 
-$rain: 10;
-
-@for $i from 1 through $rain {
-  $top: (random(50) + 50) * 1%;
-  $left: random(100) * 1%;
-  $opacity: (random(30) + 30) * 0.01;
-  $delay: random(20) - 1s;
-
-  .rain:nth-of-type(#{$i}) {
-    animation-name: rain-#{$i};
-    animation-delay: $delay;
-    animation-duration: random(6) + 4s;
-    animation-iteration-count: infinite;
-    left: $left;
-    opacity: $opacity;
-    top: -$top;
-  }
-
-  @keyframes rain-#{$i} {
-    0% {
-      left: $left;
-      opacity: $opacity;
-      top: -$top;
-    }
-    100% {
-      opacity: 0;
-      top: $top + 40%;
-    }
+  .title {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    opacity: 0.7;
   }
 }
+
+.year {
+  text-align: right;
+}
+.description{
+  p{
+    margin-bottom: 0.5rem;
+  }
+  .job-title{
+    color: var(--primary);
+  }
+  .keywords {
+    opacity: 0.8;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+
