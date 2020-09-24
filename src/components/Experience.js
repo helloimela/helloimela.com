@@ -6,11 +6,11 @@ import './components.scss';
 
 function Experience() {
   return (
-    <div className='experience-container'>
+    <div id='experience' className='full-container experience-container'>
       <Container>
         <Row className="justify-content-md-center">
           <Col md={{ span: 6, offset: 4 }} className='title'>
-            <h3 className='display italic'>Experience</h3>
+            <h3 className='display xl italic'>Experience</h3>
           </Col>
           <ListCv
             year='2018-present'

@@ -1,28 +1,42 @@
-.container {
+.full-container {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
   padding-top: var(--header-height);
 }
 
-.display-container {
-  margin-top: 8rem;
-  color: lighten(#000022, 5%);
-  p {
-    margin-top: 2em;
-    letter-spacing: 1px;
+// Home
+.home-container {
+  height: 100%;
+  .display-container {
+    margin-top: 8rem;
+    color: lighten(#000022, 5%);
+    p {
+      margin-top: 2em;
+      letter-spacing: 1px;
+    }
   }
 }
 
-.display {
-  font-size: 5rem;
-  opacity: 0.8;
+// Profile
+.profile {
+  display: flex;
+  align-items: center;
+  margin-left: 3rem;
+  .social{
+    a{
+      font-size: 1.5rem;
+      color: var(--primary);
+      margin: 0 1rem;
+    }
+  }
 }
 
+// Experience
 .experience-container {
-  width: 100%;
-  height: 100%;
-  display: flex;
   background-color: var(--secondary);
   color: var(--white);
-
+  padding-bottom: 5rem;
   .title {
     margin-top: 4rem;
     margin-bottom: 4rem;
@@ -30,6 +44,7 @@
   }
 }
 
+// ListCv
 .year {
   text-align: right;
 }
@@ -42,8 +57,58 @@
   }
   .keywords {
     opacity: 0.8;
-    font-size: 0.9rem;
+    font-family: var(--font-sans-secondary);
+    font-size: 0.8rem;
     margin-bottom: 1.5rem;
+  }
+}
+
+// Work - Projects
+.work-container {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+  .subtitle {
+    p {
+      margin-top: 2rem;
+    }
+  }
+}
+
+// Portfolio
+.portfolio {
+  padding: 3rem;
+  display: flex;
+
+  .thumbnail {
+    height: 200px;
+    background-color: lighten(#de3c4b, 40%);
+    border: 5px solid var(--darkmagenta);
+    position: relative;
+
+    img {
+      height: 100%;
+      mix-blend-mode: multiply;
+      filter: grayscale(100%) contrast(1) brightness(90%);
+    }
+
+    &:after{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: var(--primary);
+      width: 100%;
+      height: 100%;
+      opacity: 0.2;
+    }
+  }
+
+  .description {
+    padding-left: 1rem;
+    border-bottom: 1px solid var(--darkmagenta);
+    p {
+      font-family: var(--font-sans-secondary);
+    }
   }
 }
 

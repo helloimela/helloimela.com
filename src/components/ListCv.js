@@ -11,7 +11,7 @@ function ListCv(props) {
     <Col key='col-2' md={8} className='description'>
       <h5><span className='job-title'>{props.title}</span> at {props.company}</h5>
       <p>{props.description}</p>
-      <p class='italic keywords'>{props.keywords}</p>
+      <p className='italic keywords'>{props.keywords}</p>
     </Col>
   ];
 }
