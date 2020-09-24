@@ -11,14 +11,18 @@
   --font-serif: 'Playfair Display', serif;
   --font-sans: 'Public Sans', sans-serif;
   --font-sans-secondary : 'Poppins', sans-serif;
-  --header-height: 51px;
+  --header-height: 57px;
 }
 
 html {
   scroll-behavior: smooth;
 }
-html, body, #root {
+html, body, #root{
   height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
 }
 
 body{
@@ -55,16 +59,56 @@ body{
   width: 100%;
   // border-bottom: 1px solid var(--primary);
   padding-top: 1rem;
-  padding-bottom: 1rem;
-  // background-color: var(--white);
+  background-color: var(--white);
   justify-content: space-between;
+  transition: all 0.5s ease-in;
+
   .nav-item a{
     color: var(--darkmagenta);
     font-weight: 531;
     text-decoration: none;
     margin-right: 3rem;
-    border-bottom: 2px solid var(--darkmagenta);
+    border-bottom: 1px solid var(--darkmagenta);
+    position: relative;
+    &:after, &:before {
+      content: '';
+      position: absolute;
+    }
+    &:before{
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 1px solid var(--darkmagenta);
+      border-bottom: 0;
+      z-index: -2;
+    }
+    &:after{
+      width: 105%;
+      height: 105%;
+      top: -2px;
+      left: -2px;
+      z-index: -1;
+      background-color: var(--white);
+      transition: all 0.5s ease-in;
+      transform-origin: bottom left;
+    }
+
+    &:hover, &.active {
+      &:after {
+        transform: rotate(-90deg);
+      }
+    }
   }
+
+  &.experience {
+    background-color: var(--secondary);
+    color: var(--white);
+    .nav-item a:after {
+      background-color: var(--secondary);
+    }
+  }
+
   .nav-link {
     display: inline-block;
   }
