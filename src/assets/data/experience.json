@@ -1,0 +1,46 @@
+{
+  "list" : [
+    {
+      "year":"2018-present",
+      "title":"UI Developer",
+      "company":"Scania - Södertälje, Sweden",
+      "description":"Develop and maintain Scania design system as a frontend developer.",
+      "keywords":"Javascript, StencilJS, Web components, Design system"
+    },
+    {
+      "year":"2018",
+      "title":"Thesis on Visualisation",
+      "company":"Scania - Södertälje, Sweden",
+      "description":"Visualization of linked data for interoperability tools.",
+      "keywords":"d3.js, Data visualization, Javascript"
+    },
+    {
+      "year":"2017",
+      "title":"UX Research Intern",
+      "company":"Ericsson - Stockholm, Sweden",
+      "description":"Conduct a user research for internal system in the test area.",
+      "keywords":"UX Research, Persona, User interview, Usability testing"
+    },
+    {
+      "year":"2016",
+      "title":"Student in HCI",
+      "company":"KTH - Stockholm, Sweden",
+      "description":"Collaborate with designer and backend developers and implement solution as a web application.",
+      "keywords":"Javascript, Angular, HTML, SASS Compass"
+    },
+    {
+      "year":"2013",
+      "title":"Frontend Developer",
+      "company":"Varnion Technology - Bandung, Indonesia",
+      "description":"Collaborate with designer and backend developers and implement solution as a web application.",
+      "keywords":"Javascript, Angular, HTML, SASS Compass"
+    },
+    {
+      "year":"2009",
+      "title":"Student in Informatics Engineering",
+      "company":"Duta Wacana Christian University - Indonesia",
+      "description":"Collaborate with designer and backend developers and implement solution as a web application.",
+      "keywords":"Javascript, Angular, HTML, SASS Compass"
+    }
+  ]
+}

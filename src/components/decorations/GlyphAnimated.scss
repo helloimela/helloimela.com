@@ -9,7 +9,7 @@
   
   @for $j from 1 to 5 {
     &.glyph-#{$j} {
-      animation: move 10s ease #{random(5)}s alternate infinite;
+      animation: move 10s ease #{random(6)}s alternate infinite;
     }
   }
 

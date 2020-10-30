@@ -1,19 +1,22 @@
 import React from 'react';
-import { Col } from 'react-bootstrap';
 
 import './components.scss';
 
-function ListCv(props) {
-  return [
-    <Col key='col-1' md={4} className='year'>
-      <h5>{props.year}</h5>
-    </Col>,
-    <Col key='col-2' md={8} className='description'>
-      <h5><span className='job-title'>{props.title}</span> at {props.company}</h5>
-      <p>{props.description}</p>
-      <p className='italic keywords'>{props.keywords}</p>
-    </Col>
-  ];
-}
+export default class ListCv extends React.Component {
 
-export default ListCv;
+  constructor(){
+    super();
+  }
+
+  render(){
+    return [
+      <div key='col-2' className={'circle-cv ' + this.props.className} onClick={this.props.onDetail}>
+        <h5 className='job-year'><span>{this.props.year}</span></h5>
+        <div className='circle-text'>
+          <h5>{this.props.title}</h5>
+          <p>at {this.props.company}</p>
+        </div> 
+      </div>
+    ];
+  }
+}
