@@ -11,15 +11,18 @@ export default class Experience extends React.Component {
     super();
     this.state = {
       display:'',
-      active:(-1)
+      currentItem: {},
+      active: (-1)
     }
   }
 
   onDetail(index){
-    const newState = 'showDetail';
+    const newState = this.state.display == 'showDetail' ? '' : 'showDetail';
+    const activeState = this.state.display == 'showDetail' ? '8' : index;
     this.setState({
       display : newState,
-      active: index
+      currentItem: experience.list[index],
+      active: activeState
     });
   }
 
@@ -29,11 +32,8 @@ export default class Experience extends React.Component {
       elems.push(
         <ListCv key={'cv' + index}
         className={'cv' + index + ' ' + (this.state.active === index ? 'active' : '')}
-        year={item.year}
-        title={item.title}
-        company={item.company}
-        description={item.description}
-        keywords={item.keywords}
+        item={item}
+        active={(this.state.active === index ? 'active' : '')}
         onDetail={this.onDetail.bind(this, index)}/>
       )
     })
