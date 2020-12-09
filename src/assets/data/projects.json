@@ -1,0 +1,28 @@
+{
+  "items" : [
+    {
+      "id":1,
+      "title": "mainapi",
+      "description":"A simple Bingo game creator made with React.",
+      "gh":"https://github.com/helloimela/mainapi",
+      "link":"",
+      "keywords": "React"
+    },
+    {
+      "id":2,
+      "title": "seeSong",
+      "description":"Visualisation of playlist based on mood. Created with Spotify Web API and React.",
+      "gh":"",
+      "link":"",
+      "keywords": "React, Spotify Web API"
+    },
+    {
+      "id":3,
+      "title": "gregori.io",
+      "description":"Personal website for a photographer. Created with customly made Wordpress theme and pure Javascript.",
+      "gh":"",
+      "link":"http://gregori.io/",
+      "keywords": "PHP, Javascript, Wordpress"
+    }
+  ]
+}

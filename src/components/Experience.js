@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 import ListCv from './ListCv';
 import './components.scss';
-import experience from '../assets/data/experience.json'
+import experience from '../assets/data/experience.json';
 
 export default class Experience extends React.Component {
 

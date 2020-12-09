@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
 import Portfolio from './Portfolio';
+import projects from '../assets/data/projects.json';
 
 import './components.scss';
 
