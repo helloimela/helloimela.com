@@ -2,26 +2,36 @@
   "items" : [
     {
       "id":1,
-      "title": "mainapi",
-      "description":"A simple Bingo game creator made with React.",
-      "gh":"https://github.com/helloimela/mainapi",
-      "link":"",
-      "keywords": "React"
-    },
-    {
-      "id":2,
-      "title": "seeSong",
-      "description":"Visualisation of playlist based on mood. Created with Spotify Web API and React.",
-      "gh":"",
-      "link":"",
+      "title": "giflyst",
+      "description":"Fun GIF that suits your Spotify playlist mood. Created with Spotify Web API and React.",
+      "gh":"https://github.com/helloimela/giflyst",
+      "link":"https://giflyst.herokuapp.com/",
+      "image":"./assets/giflyst.jpg",
       "keywords": "React, Spotify Web API"
     },
     {
-      "id":3,
+      "id":2,
       "title": "gregori.io",
-      "description":"Personal website for a photographer. Created with customly made Wordpress theme and pure Javascript.",
-      "gh":"",
+      "description":"A photo gallery with dark theme. Created with customly made Wordpress theme and pure Javascript.",
       "link":"http://gregori.io/",
+      "image":"./assets/gregorio.jpg",
+      "keywords": "PHP, Javascript, Wordpress"
+    },
+    {
+      "id":3,
+      "title": "mainapi",
+      "description":"A simple Bingo game creator made with React.",
+      "gh":"https://github.com/helloimela/mainapi",
+      "image":"./assets/mainapi.png",
+      "keywords": "React"
+    },
+    {
+      "id":4,
+      "title": "gregometer",
+      "description":"Simple quiz game created with Angular",
+      "link":"https://helloimela.github.io/gregometer",
+      "gh": "https://github.com/helloimela/gregometer",
+      "image":"./assets/gregometer.png",
       "keywords": "PHP, Javascript, Wordpress"
     }
   ]

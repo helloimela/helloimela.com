@@ -114,3 +114,14 @@ body{
     display: inline-block;
   }
 }
+
+@media (max-width: 790px) {
+  .nav {
+    .nav-item {
+      margin-top: 20px;
+      padding-bottom: 20px;
+      width: 100%;
+      padding-left: 3rem;
+    }
+  }
+}
