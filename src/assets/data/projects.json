@@ -2,37 +2,53 @@
   "items" : [
     {
       "id":1,
-      "title": "giflyst",
-      "description":"Fun GIF that suits your Spotify playlist mood. Created with Spotify Web API and React.",
-      "gh":"https://github.com/helloimela/giflyst",
-      "link":"https://giflyst.herokuapp.com/",
-      "image":"./assets/giflyst.jpg",
-      "keywords": "React, Spotify Web API"
+      "title": "Scania Design System website",
+      "description":"Digital design system website for Scania",
+      "gh":"https://github.com/scania/corporate-ui-site",
+      "link":"https://digitaldesign.scania.com/",
+      "image":"./assets/scania.png",
+      "keywords": "Angular 8, Typescript, Headless CMS, Strapi"
     },
     {
       "id":2,
+      "title": "giflyst",
+      "description":"Fun GIF that suits your Spotify playlist mood.",
+      "gh":"https://github.com/helloimela/giflyst",
+      "link":"https://giflyst.herokuapp.com/",
+      "image":"./assets/giflyst.jpg",
+      "keywords": "React, Spotify Web API, SCSS"
+    },
+    {
+      "id":3,
       "title": "gregori.io",
-      "description":"A photo gallery with dark theme. Created with customly made Wordpress theme and pure Javascript.",
+      "description":"A photo gallery with dark theme and sliders.",
       "link":"http://gregori.io/",
       "image":"./assets/gregorio.jpg",
       "keywords": "PHP, Javascript, Wordpress"
     },
     {
-      "id":3,
+      "id":4,
       "title": "mainapi",
-      "description":"A simple Bingo game creator made with React.",
+      "description":"React application to create a bingo game.",
       "gh":"https://github.com/helloimela/mainapi",
       "image":"./assets/mainapi.png",
-      "keywords": "React"
+      "keywords": "React, SCSS"
     },
     {
-      "id":4,
-      "title": "gregometer",
-      "description":"Simple quiz game created with Angular",
-      "link":"https://helloimela.github.io/gregometer",
-      "gh": "https://github.com/helloimela/gregometer",
-      "image":"./assets/gregometer.png",
-      "keywords": "PHP, Javascript, Wordpress"
+      "id":5,
+      "title": "Human Tetris",
+      "description":"Exploring whole-body interaction by digitalizing 'hole in the wall' game",
+      "link":"https://vimeo.com/198465692",
+      "image":"./assets/humantetris.jpg",
+      "keywords": "Unity3D, Kinect v2"
+    },
+    {
+      "id":6,
+      "title": "qajoo.com",
+      "description":"Website development using AngularJS for Qajoo Studio (2015)",
+      "link":"https://qajoo.com/",
+      "image":"./assets/qajoo.jpg",
+      "keywords": "AngularJS, Javascript, SASS/Compass"
     }
   ]
 }

@@ -18,12 +18,15 @@ export default class Portfolio extends React.Component {
         <div className='description'>
           <h5>{this.props.item.title}</h5>
           <p>{this.props.item.description}</p>
+          {this.props.item.keywords &&
+            <p className='keywords'>{this.props.item.keywords}</p>
+          }
           <p className='link'>
           {this.props.item.gh &&
-            <a href={this.props.item.gh} target='_blank'><i className='fab fa-github'></i></a>
+            <a href={this.props.item.gh} target='_blank'><i className='fab fa-github'></i>Github</a>
           }
           {this.props.item.link &&
-            <a href={this.props.item.link} target='_blank'><i className='fas fa-external-link-square-alt'></i></a>
+            <a href={this.props.item.link} target='_blank'><i className='fas fa-external-link-square-alt'></i>Demo</a>
           }
           </p>
         </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
 import Portfolio from './Portfolio';
+import Footer from './Footer';
 import projects from '../assets/data/projects.json';
 
 import './components.scss';
@@ -28,9 +29,12 @@ export default class Work extends React.Component {
           <Row className="align-items-center">
             <Col xs md='12' className='title'>
               <h3 className='display italic'>Selected Projects</h3>
-              <p>Most of my works are NDA protected. So here are some fun projects I did on my free time.</p>
+              <p>Here are fun projects that I did both on my professional role and on my free time. Most of other projects are NDA protected.</p>
             </Col>
             {this.renderList()}
+          </Row>
+          <Row>
+            <Footer/>
           </Row>
         </Container>
       </div>
