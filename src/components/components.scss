@@ -277,9 +277,17 @@
   }
 }
 
-@media (max-width: 678px) {
+@media (min-width:1600px) {
+  #experience.full-container{
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media (max-width: 768px) {
   .circle-cv{
     float: unset;
+    margin-left: 20px;
     .circle-text{
       margin-top: 0;
       transform: translateY(0);

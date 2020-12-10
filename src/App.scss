@@ -23,6 +23,9 @@ html, body, #root{
 
 .wrapper {
   min-height: 100%;
+  &.experience{
+    background-color: var(--secondary);
+  }
 }
 
 body{

@@ -60,7 +60,7 @@ export default class App extends React.Component {
         <div className='wrapper'>
           <Home/>
         </div>
-        <div className='wrapper' ref={this.experience}>
+        <div className='wrapper experience' ref={this.experience}>
           <Experience/>
         </div>
         <div className='wrapper' ref={this.work}>
