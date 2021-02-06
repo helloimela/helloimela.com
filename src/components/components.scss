@@ -284,7 +284,46 @@
     margin-left: auto;
   }
 }
-@media (max-width: 768px) {
+
+.footer {
+  padding-top: 40px;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 800px) {
+  .profile {
+    margin-left: 1rem;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+  }
+  #root .nav {
+    .nav-item{
+      margin-left: 0;
+      padding-left: 10px;
+      text-align: center;
+      a {
+        margin-right: 1rem;
+      }
+    }
+  }
+  .experience-container{
+    overflow-x: hidden;
+    padding-bottom: 12rem;
+    .title {
+      margin-left: 1rem;
+    }
+  }
+  .portfolio {
+    padding-bottom: 0;
+    .thumbnail{
+      display: none;
+    }
+    .description{
+      padding-bottom: 3rem;
+    }
+  }
   .circle-cv{
     float: unset;
     margin-left: 20px;
@@ -308,12 +347,10 @@
         top: unset;
       }
     }
-    
+    .cv-detail{
+      width: 300px;
+    }
   }
-}
-
-.footer {
-  padding-top: 40px;
-  font-size: 0.8rem;
+  
 }
 
