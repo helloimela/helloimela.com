@@ -2,51 +2,75 @@
   "items" : [
     {
       "id":1,
-      "title": "Scania Design System website",
-      "description":"Digital design system website for Scania",
-      "gh":"https://github.com/scania/corporate-ui-site",
-      "link":"https://digitaldesign.scania.com/",
+      "title": "Scania Digital Design System website",
+      "objective": "Scania Digital Design System website is used by employees in Scania to help them develop digital products from the UX and design phase until the development phase. The website contains smaller building blocks to achieve a coherent user interface across Scania organisation.",
+      "description":[
+        "Together with the team, we translate the beautiful UI of the design system website into a full interactive website. We use Headless CMS which is built with Strapi and fetch the data with GraphQL query. The concept behind the website architechture is that we want to have versioning over the content. So the content of the website is served on the build stage and versioned in Github pull request.",
+        "On this project, I was involved in the creation of the website and the CMS for the content. We developed a custom dashboard interface in Strapi to add a little touch of Scania looks and feel to the default dashboard. The development of the dashboard in Strapi is using React and JSX. I also deployed the CMS to our organisation cloud service which is served in AWS. On this task, I implemented the concept of deploying application in cloud architechture, from the database and also the application container on the internal network. I created quite a few NodeJS script to support this application running on the container. I also created a script for the uploading process with AWS SDK for Javascript.",
+        "For the website itself, I involved in the daily maintenance of the website and creating Angular components. I worked a lot with my fellow developer in the team where we review each other's pull request, and also planning the whole architecture together. We also have a lot of communications with the designer and product owner, in order to understand each requirements of the website. On this project, I also worked a lot with GraphQL query, to fetch the correct output and also sometimes we need to update a bulk of data in a faster way."
+      ],
+      "gh":"https://github.com/scania-digital-design-system/sdds-website",
+      "link":["https://digitaldesign.scania.com/"],
       "image":"./assets/scania.png",
-      "keywords": "Angular 8, Typescript, Headless CMS, Strapi"
+      "keywords": "NodeJS, Angular 8, Typescript, Headless CMS, Strapi, GraphQL, React, JSX"
     },
     {
       "id":2,
+      "title": "Scania Digital Design System components and theme",
+      "objective":"We deliver web components and theme to help developers in Scania implement Scania styles in a more efficient way. We build web components with StencilJS and multiple packages for different foundations based on SCSS.",
+      "description":[
+        "In the Corporate Digital Design team, we deliver multiple packages in NPM to cater the needs of all Scania developers implementing Scania design guidelines in their code. The main challenge is that we need to think about framework agnostic solution since every developers in Scania have different framework to work with. We decided to create a collection of web components since it will work in most of modern browsers and can be used even with simple HTML application.",
+        "We used StencilJS and SCSS as our main stacks for the project. StencilJS is based on Typescrypt and using JSX syntax, make it pretty convenience to use. The theme is delivered via a web component called sdds-theme. And from this component, developers are able to fetch the styling of all components. The theme contains all the CSS Variable for all the design tokens. The CSS Variable then can be used to style both StencilJS web components and Scania CSS classes.",
+        "We published all the packages in NPM and using Lerna to handle the monorepo structure of the project. Other than publishing the packages, we also need to test it in different frameworks. Until now, we have demo projects running in Angular 11, React, and Vue."
+      ],
+      "gh":"https://github.com/scania-digital-design-system/sdds",
+      "link":["https://digitaldesign.scania.com/components/overview", "https://www.npmjs.com/org/scania"],
+      "image":"",
+      "keywords": "StencilJS, Typescript, JSX, SCSS, Gulp, Git, Lerna"
+    },
+    {
+      "id":3,
       "title": "giflyst",
-      "description":"Fun GIF that suits your Spotify playlist mood.",
+      "objective":"Fun GIF that suits your Spotify playlist mood.",
+      "description":["I like developing fun projects on my free time. It's been a while since the last time I played around with some public API. In 2017, I attended Spotify Hackathon in Stockholm. It was fun experience, so I wanted to try it again. Right now, I also use the API from GIPHY which offered a range of fun GIF. It is also been a while since I worked with a full React project. On my work, I mostly work with Angular, Typescript, and pure JS, and also React but only when testing my team's product and customizing Strapi dashboard UI. That is why I created this project. This application will generate GIF based on the playlist analysis. I would like to improve the experience by adding a feature to share the gif in social media."],
       "gh":"https://github.com/helloimela/giflyst",
-      "link":"https://giflyst.herokuapp.com/",
+      "link":["https://giflyst.herokuapp.com/"],
       "image":"./assets/giflyst.jpg",
       "keywords": "React, Spotify Web API, SCSS"
     },
     {
-      "id":3,
+      "id":4,
       "title": "gregori.io",
-      "description":"A photo gallery with dark theme and sliders.",
-      "link":"http://gregori.io/",
+      "objective":"The main objective is a photo gallery for my boyfriend who loves photography. The main requirements is it should be simple and has dark theme. I created the design and build a custom theme for Wordpress.",
+      "description":["I was into Wordpress theme for a while. And this project is one of the result of that period of time. Wordpress theme can be fun, no need to use complicated frameworks, and VanillaJS is just enough. I had some experience with PHP as well, that is why I feel convinience working with Wordpress theme. Although I am into programming stuff, I also love designing. On this project, I created the prototype with Photoshop and translate it into code. It's always fun when I can translate my own design into code."],
+      "link":["http://gregori.io/"],
       "image":"./assets/gregorio.jpg",
-      "keywords": "PHP, Javascript, Wordpress"
+      "keywords": "Adobe Photoshop, PHP, Javascript, Wordpress"
     },
     {
-      "id":4,
+      "id":5,
       "title": "mainapi",
-      "description":"React application to create a bingo game.",
+      "objective":"React application to create a bingo game.",
+      "description":["On the beginning time of the pandemic, the bingo game is really viral on Instagram. Influencer, company, common people, are using Insta Story feature to create a bingo game and at the same time promoting their account or their campaign. The platform and the game is used as a promotional tool, and many people loves it. So I created this application, which will generate a bingo game based on the input from the JSON file. On the final stage, people can share the result by making a screenshot and post it in their social media. I have used it to create a custom bingo on my friend's birthday to surprise him and see how many people can connect their memories with him. It was so much fun and many of his friends who is not reaching him out for a while, get connected with him through a game. However, there are a lot of things to improve. For example, the UI for the final result screen can be better. Aother thing is that we need to clone the project and change the data in the JSON manually to make it work. It would be nice if I can add a feature to automated this process."],
       "gh":"https://github.com/helloimela/mainapi",
       "image":"./assets/mainapi.png",
       "keywords": "React, SCSS"
     },
     {
-      "id":5,
+      "id":6,
       "title": "Human Tetris",
-      "description":"Exploring whole-body interaction by digitalizing 'hole in the wall' game",
-      "link":"https://vimeo.com/198465692",
+      "objective":"This is a project for a course when I was doing my Master Degree at KTH. We need to explore multimodal experiences and we created a whole-body interaction by digitalizing 'hole in the wall' game",
+      "description":["Human Tetris is a popular game in Japan which already adapted in many countries. It requires the contestants to fit through the hole in the wall. To develop this game in the form of virtual reality will create an attractive multimodal experience. Users need to move their body to match with the hole that they see and at the same time feels the wall coming closer with the existence of 3D sound effects.The project is build with Unity3D (with C#) and we use Kinect as the sensor to detect our body movement."],
+      "link":["https://vimeo.com/198465692"],
       "image":"./assets/humantetris.jpg",
       "keywords": "Unity3D, Kinect v2"
     },
     {
-      "id":6,
+      "id":7,
       "title": "qajoo.com",
-      "description":"Website development using AngularJS for Qajoo Studio (2015)",
-      "link":"https://qajoo.com/",
+      "objective":"The website was built for a startup game company based in Bandung and Jogjakarta in 2015. The website is built using AngularJS for a studio game called Qajoo which released several games in Android in iOs.",
+      "description":["Since the website is built for game products, it needs to be fun and attractive. I worked together with Product Owner and Designers to translate their ideas into interactive website. In 2015, parallax effect was a trend. We implemented parallax effect on some of the game preview in the website. We also have a precision on every pixel, and the UI involves some extraordinary elements, for example, diagonal section, parallax objects, and slider with smooth interaction. After all, this project was really fun because I had a chance to explore different challenges in web development. Other than that, on this project I also need a strong collaboration and communication with the Product Owner, Game developer, and also the Designers."],
+      "link":["https://qajoo.com/"],
       "image":"./assets/qajoo.jpg",
       "keywords": "AngularJS, Javascript, SASS/Compass"
     }

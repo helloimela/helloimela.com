@@ -5,6 +5,10 @@
   padding-top: var(--header-height);
 }
 
+.font-small{
+  font-size: 0.8rem;
+}
+
 // Home
 .home-container {
   height: 100%;
@@ -201,6 +205,9 @@
   padding-top: 8rem;
   padding-bottom: 5rem;
   color: #575757;
+  .title{
+    margin-bottom: 2rem;
+  }
   .subtitle {
     p {
       margin-top: 2rem;
@@ -209,72 +216,23 @@
 }
 
 // Portfolio
-.portfolio {
-  padding: 3rem;
-  display: flex;
-
-  .keywords{
+.link-works{
+  margin-bottom: 2rem;
+  a, span{
+    display: block;
+    color: var(--darkmagenta);
+    margin-bottom: 0.2rem;
     font-size: 0.9rem;
-    font-style: italic;
-    font-weight: 700;
-    color: var(--orange);
-  }
-
-  .thumbnail {
-    height: 198px;
-    width: 200px;
-    background-color: lighten(#de3c4b, 80%);
-    border: 4px solid var(--secondary);
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-    flex: 0 0 200px;
-
-    img {
-      width: 100%;
-      height: 100%;
+    &:hover{
+      color: var(--primary);
     }
-
-    &:after{
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-color: var(--primary);
-      width: 100%;
-      height: 100%;
-      opacity: 0.2;
+    i{
+      margin-right: 0.5rem;
     }
   }
-
-  .description {
-    padding-left: 1rem;
-    border-bottom: 1px solid var(--secondary);
-    h5 {
-      color: var(--secondary);
-    }
-    .link {
-      display: inline-block;
-      a{
-        margin-right: 20px;
-        color: var(--darkmagenta);
-        letter-spacing: 1px;
-        font-size: 0.8rem;
-        i {
-          margin-right: 5px;
-        }
-      }
-    }
-  }
-
-  &:hover {
-    .thumbnail img {
-      mix-blend-mode: multiply;
-      filter: grayscale(70%) contrast(1) brightness(100%);
-      // filter: none;
-    }
-
-  }
+ span {
+   color: #20208e;
+ }
 }
 
 @media (min-width:1600px) {

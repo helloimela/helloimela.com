@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Accordion } from 'react-bootstrap';
 
 import Portfolio from './Portfolio';
 import Footer from './Footer';
@@ -13,9 +13,9 @@ export default class Work extends React.Component {
     const elems = [];
     projects.items.map((item, index) => {
       elems.push(
-        <Portfolio key={'project-' + index}
-        className={'project-' + index}
-        item={item}/>
+          <Portfolio key={'project-' + index}
+          className={'project-' + index}
+          item={item}/>
       )
     })
 
@@ -25,13 +25,43 @@ export default class Work extends React.Component {
   render() {
     return (
       <div id='projects' className='full-container work-container'>
+        <style type="text/css">
+          {`
+          .card, .card-header{
+            background: transparent;
+            border: 0;
+          }
+          .card-header{
+            background: var(--light);
+            color: var(--secondary);
+            cursor: pointer;
+          }
+          .accordion > .card,
+          .accordion > .card:not(:last-of-type),
+          .accordion > .card:not(:first-of-type) 
+          {
+            border-bottom: 1px solid #ffcad5;
+          }
+          .collapse.show .card-body{
+            border-top: 1px solid #ffcad5;
+          }
+          .card-body{
+            background: #fdfdfc;
+          }
+          `}
+        </style>
         <Container>
-          <Row className="align-items-center">
-            <Col xs md='12' className='title'>
+          <Row className="justify-content-md-center align-items-center">
+            <Col sm='12' md='10' lg='8' className='title'>
               <h3 className='display italic'>Selected Projects</h3>
-              <p>Here are fun projects that I did both on my professional role and on my free time. Most of other projects are NDA protected.</p>
             </Col>
-            {this.renderList()}
+
+            <Col sm='12' md='10' lg='8' key='accordion'>
+              <Accordion>
+              {this.renderList()}
+              </Accordion>
+            </Col>
+
           </Row>
           <Row>
             <Footer/>
